@@ -57,7 +57,7 @@
 
 /* ---------- Tokens: typography ---------- */
 :root{
-  --font-display:'Shrikhand',Georgia,'Times New Roman',serif;
+  --font-display:'TAN Nimbus',Georgia,'Times New Roman',serif;
   --font-body:'Inter',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;
   --font-label:var(--font-body);
 
@@ -138,6 +138,15 @@
   --press-scale:0.985;
   --hover-lift:-2px;
   --image-zoom:1.03;
+}
+
+/* ---------- Fonts ---------- */
+@font-face{
+  font-family:'TAN Nimbus';
+  src:url('/fonts/TAN-NIMBUS.woff2') format('woff2');
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
 }
 
 /* ---------- Base ---------- */

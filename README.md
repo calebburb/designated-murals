@@ -41,9 +41,7 @@ Or from the command line: `npm i -g vercel && vercel --prod` from the repo root.
 
 ### The display font
 
-The design's original display face was **TAN Nimbus**, a licensed retail font. The site instead uses **[Shrikhand](https://fonts.google.com/specimen/Shrikhand)** (SIL Open Font License, served from Google Fonts) — the closest free match to its fat, groovy character. It's set via `--font-display` in `public/css/site.css` and loaded in each page's Google Fonts `<link>`.
-
-If a TAN Nimbus license is ever acquired, restore it by placing the `.otf` at `public/fonts/TAN-NIMBUS.otf`, adding an `@font-face` for it in `site.css`, and putting `'TAN Nimbus'` first in `--font-display`. To try **Fraunces** instead (the calmer upright alternative), swap `Shrikhand` for `Fraunces:opsz,wght@144,900` in the font `<link>`s and `'Fraunces'` in `--font-display`.
+The display face is **TAN Nimbus** (TAN Type Foundry), self-hosted as a woff2 at `public/fonts/TAN-NIMBUS.woff2` — shipped at the site owner's decision. Note it is a licensed retail font: a proper desktop + web license from [TAN](https://tan.type-department.com) should be picked up when practical, and making this repo private (GitHub → Settings → Change visibility) reduces exposure in the meantime. Free fallback candidates evaluated earlier, if ever needed: Shrikhand, Kavoon, Chicle (all SIL OFL on Google Fonts).
 
 ## The consult form
 
