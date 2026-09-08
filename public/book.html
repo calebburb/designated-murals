@@ -8,11 +8,13 @@
 <meta property="og:title" content="Book the Consult — Designated">
 <meta property="og:description" content="Thirty minutes, no obligation. You leave with a clear next step either way.">
 <meta property="og:image" content="/assets/work/kbs-eagle.jpg">
+<script>try{if(!sessionStorage.dsgSeen&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("loading")}catch(e){}</script>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
 <link rel="stylesheet" href="/css/site.css">
+<script src="/js/site.js" defer></script>
 </head>
 <body>
 
@@ -35,9 +37,9 @@
       <span class="dots" aria-hidden="true"></span>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(40px,7vw,100px);margin-top:28px;align-items:start">
-      <div style="display:grid;gap:var(--space-6);justify-items:start">
-        <h1 style="font-size:var(--text-display-1);margin:0;max-width:13ch">Book the <span class="accent">Consult.</span></h1>
-        <p style="font-size:var(--text-body-lg);color:var(--text-muted);margin:0;max-width:36ch;line-height:1.62">Thirty minutes, no obligation. We talk through the space, the atmosphere you want, and whether a mural or an activation is the right move. You leave with a clear next step either way.</p>
+      <div data-stagger="90" style="display:grid;gap:var(--space-6);justify-items:start">
+        <h1 data-words style="font-size:var(--text-display-1);margin:0;max-width:13ch">Book the <span class="accent">Consult.</span></h1>
+        <p class="reveal" style="font-size:var(--text-body-lg);color:var(--text-muted);margin:0;max-width:36ch;line-height:1.62">Thirty minutes, no obligation. We talk through the space, the atmosphere you want, and whether a mural or an activation is the right move. You leave with a clear next step either way.</p>
         <span class="dot-rule dot-rule--18" aria-hidden="true"></span>
         <div style="display:grid;gap:8px;font-size:var(--text-body-md);color:var(--text-muted);line-height:1.6">
           <span>208-519-0696</span>
@@ -50,7 +52,7 @@
         </div>
       </div>
 
-      <form id="consult-form" style="display:grid;gap:var(--space-5);background:var(--surface-raised);border:1px solid var(--line-hairline);padding:clamp(24px,4vw,44px)">
+      <form id="consult-form" class="reveal" style="--d:250ms;display:grid;gap:var(--space-5);background:var(--surface-raised);border:1px solid var(--line-hairline);padding:clamp(24px,4vw,44px)">
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:var(--space-5)">
           <div class="field">
             <label for="bn">Your Name <span class="req">*</span></label>

@@ -8,11 +8,13 @@
 <meta property="og:title" content="The Studio — Designated">
 <meta property="og:description" content="Place-making, not decoration. A mural and event design practice in Boise, Idaho.">
 <meta property="og:image" content="/assets/work/service-mural.jpg">
+<script>try{if(!sessionStorage.dsgSeen&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("loading")}catch(e){}</script>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
 <link rel="stylesheet" href="/css/site.css">
+<script src="/js/site.js" defer></script>
 </head>
 <body>
 
@@ -35,21 +37,21 @@
       <span class="dots" aria-hidden="true"></span>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(32px,7vw,110px);align-items:end;margin-top:28px">
-      <h1 style="font-size:var(--text-display-1);margin:0;max-width:13ch">Place-Making, Not <span class="accent">Decoration.</span></h1>
-      <p class="lede-right">Designated is a mural and event design practice in Boise, Idaho, working with commercial spaces across the Treasure Valley and with touring brands on the road.</p>
+      <h1 data-words style="font-size:var(--text-display-1);margin:0;max-width:13ch">Place-Making, Not <span class="accent">Decoration.</span></h1>
+      <p class="lede-right reveal" style="--d:250ms">Designated is a mural and event design practice in Boise, Idaho, working with commercial spaces across the Treasure Valley and with touring brands on the road.</p>
     </div>
   </section>
 
-  <div style="position:relative;height:clamp(280px,38vw,460px);overflow:hidden;background:var(--surface-sunken)">
-    <div style="position:absolute;inset:0;background-image:url(/assets/work/service-mural.jpg);background-size:cover;background-position:center" role="img" aria-label="Hand-painting a mural"></div>
+  <div class="bleed" style="position:relative;height:clamp(280px,38vw,460px);overflow:hidden;background:var(--surface-sunken)">
+    <div class="kenburns" style="position:absolute;inset:0;background-image:url(/assets/work/service-mural.jpg);background-size:cover;background-position:center" role="img" aria-label="Hand-painting a mural"></div>
   </div>
 
   <section class="container" style="padding-top:clamp(64px,9vw,140px);padding-bottom:clamp(64px,9vw,140px);display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(32px,7vw,100px);align-items:start">
     <div>
       <div class="eyebrow"><span>Short Bio</span></div>
-      <h2 style="font-size:var(--text-display-2);line-height:1.15;margin:22px 0 0;max-width:15ch">Hospitality First, Paint Second.</h2>
+      <h2 data-words style="font-size:var(--text-display-2);line-height:1.15;margin:22px 0 0;max-width:15ch">Hospitality First, Paint Second.</h2>
     </div>
-    <div style="display:grid;gap:20px">
+    <div class="reveal" style="display:grid;gap:20px;--d:200ms">
       <p style="font-size:var(--text-body-lg);color:var(--graphite);margin:0;line-height:1.62">We started in event production, where the measure of good work is whether people stay. That standard carries into every wall: the mural is judged by how the room gets used afterward, not by how it photographs on day one.</p>
       <p style="font-size:var(--text-body-lg);color:var(--text-muted);margin:0;line-height:1.62">Since then the practice has painted restaurants, wellness studios, and venues across Boise, and built activations and transportable work for touring brands. Every project runs on the same three stages, with a written scope before a brush is opened.</p>
       <span class="dot-rule dot-rule--18" aria-hidden="true"></span>
@@ -57,16 +59,16 @@
   </section>
 
   <section style="background:var(--surface-sunken);padding:clamp(64px,9vw,130px) 0">
-    <div class="container" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:var(--space-7)">
-      <div style="display:grid;gap:10px"><span style="font-family:var(--font-display);font-size:var(--text-display-3);line-height:1.15">3</span><span style="font-size:var(--text-label-sm);letter-spacing:var(--track-label);text-transform:uppercase;color:var(--text-label);line-height:1.6">Ways to Partner</span></div>
-      <div style="display:grid;gap:10px"><span style="font-family:var(--font-display);font-size:var(--text-display-3);line-height:1.15">16+</span><span style="font-size:var(--text-label-sm);letter-spacing:var(--track-label);text-transform:uppercase;color:var(--text-label);line-height:1.6">Touring Brands Served</span></div>
-      <div style="display:grid;gap:10px"><span style="font-family:var(--font-display);font-size:var(--text-display-3);line-height:1.15">1</span><span style="font-size:var(--text-label-sm);letter-spacing:var(--track-label);text-transform:uppercase;color:var(--text-label);line-height:1.6">Complimentary Revision Round</span></div>
-      <div style="display:grid;gap:10px"><span style="font-family:var(--font-display);font-size:var(--text-display-3);line-height:1.15">100%</span><span style="font-size:var(--text-label-sm);letter-spacing:var(--track-label);text-transform:uppercase;color:var(--text-label);line-height:1.6">Hand-Painted</span></div>
+    <div class="container" data-stagger="110" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:var(--space-7)">
+      <div class="reveal" style="display:grid;gap:10px"><span data-count="3" style="font-family:var(--font-display);font-size:var(--text-display-3);line-height:1.15">3</span><span style="font-size:var(--text-label-sm);letter-spacing:var(--track-label);text-transform:uppercase;color:var(--text-label);line-height:1.6">Ways to Partner</span></div>
+      <div class="reveal" style="display:grid;gap:10px"><span data-count="16" data-suffix="+" style="font-family:var(--font-display);font-size:var(--text-display-3);line-height:1.15">16+</span><span style="font-size:var(--text-label-sm);letter-spacing:var(--track-label);text-transform:uppercase;color:var(--text-label);line-height:1.6">Touring Brands Served</span></div>
+      <div class="reveal" style="display:grid;gap:10px"><span data-count="1" style="font-family:var(--font-display);font-size:var(--text-display-3);line-height:1.15">1</span><span style="font-size:var(--text-label-sm);letter-spacing:var(--track-label);text-transform:uppercase;color:var(--text-label);line-height:1.6">Complimentary Revision Round</span></div>
+      <div class="reveal" style="display:grid;gap:10px"><span data-count="100" data-suffix="%" style="font-family:var(--font-display);font-size:var(--text-display-3);line-height:1.15">100%</span><span style="font-size:var(--text-label-sm);letter-spacing:var(--track-label);text-transform:uppercase;color:var(--text-label);line-height:1.6">Hand-Painted</span></div>
     </div>
   </section>
 
   <section class="container" style="padding-top:clamp(72px,10vw,150px);padding-bottom:clamp(72px,10vw,150px);display:grid;gap:var(--space-6);justify-items:start">
-    <h2 style="font-size:var(--text-display-1);margin:0;max-width:20ch">Every Space Contains Unrealized Potential.</h2>
+    <h2 data-words style="font-size:var(--text-display-1);margin:0;max-width:20ch">Every Space Contains Unrealized Potential.</h2>
     <a class="btn btn--primary btn--lg" href="/book">Book a 30-Minute Consult <span class="arr" aria-hidden="true">→</span></a>
   </section>
 </main>

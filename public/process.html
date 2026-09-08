@@ -8,11 +8,13 @@
 <meta property="og:title" content="The Design Process — Designated">
 <meta property="og:description" content="Three stages, and you know exactly what you receive at each one.">
 <meta property="og:image" content="/assets/work/service-mural.jpg">
+<script>try{if(!sessionStorage.dsgSeen&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("loading")}catch(e){}</script>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
 <link rel="stylesheet" href="/css/site.css">
+<script src="/js/site.js" defer></script>
 </head>
 <body>
 
@@ -35,29 +37,29 @@
       <span class="dots" aria-hidden="true"></span>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(32px,7vw,110px);align-items:end;margin-top:28px">
-      <h1 style="font-size:var(--text-display-1);margin:0;max-width:12ch">The Design Process<span class="accent">.</span></h1>
-      <p class="lede-right">Mural, set, backdrop, or identity marker — three stages, and you know exactly what you receive at each one.</p>
+      <h1 data-words style="font-size:var(--text-display-1);margin:0;max-width:12ch">The Design Process<span class="accent">.</span></h1>
+      <p class="lede-right reveal" style="--d:250ms">Mural, set, backdrop, or identity marker — three stages, and you know exactly what you receive at each one.</p>
     </div>
   </section>
 
-  <section class="container" style="padding-bottom:clamp(72px,10vw,150px);display:grid;gap:var(--space-6)">
+  <section class="container spine" style="padding-bottom:clamp(72px,10vw,150px);display:grid;gap:var(--space-6)">
     <div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(20px,4vw,52px);align-items:start;border-top:1px solid var(--line-hairline);padding-top:var(--space-6)">
-      <span class="number-badge" aria-hidden="true">1</span>
-      <div style="display:grid;gap:12px">
+      <span class="number-badge badge-pop" aria-hidden="true">1</span>
+      <div class="reveal" style="display:grid;gap:12px;--d:150ms">
         <span style="font-family:var(--font-display);font-size:var(--text-display-3);line-height:1.15">Consultation</span>
         <span style="font-size:var(--text-body-lg);color:var(--text-muted);max-width:var(--measure-body);line-height:1.62">A 30-minute call on the atmosphere you want — subject, style, texture, color — plus a content template to introduce the installation to your audience.</span>
       </div>
     </div>
     <div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(20px,4vw,52px);align-items:start;border-top:1px solid var(--line-hairline);padding-top:var(--space-6)">
-      <span class="number-badge" aria-hidden="true">2</span>
-      <div style="display:grid;gap:12px">
+      <span class="number-badge badge-pop" aria-hidden="true">2</span>
+      <div class="reveal" style="display:grid;gap:12px;--d:150ms">
         <span style="font-family:var(--font-display);font-size:var(--text-display-3);line-height:1.15">Concepts</span>
         <span style="font-size:var(--text-body-lg);color:var(--text-muted);max-width:var(--measure-body);line-height:1.62">Three digital concepts drawn from the consult, mocked onto your own wall so you can feel the space. One complimentary round of revisions.</span>
       </div>
     </div>
     <div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(20px,4vw,52px);align-items:start;border-top:1px solid var(--line-hairline);padding-top:var(--space-6);border-bottom:1px solid var(--line-hairline);padding-bottom:var(--space-6)">
-      <span class="number-badge" aria-hidden="true">3</span>
-      <div style="display:grid;gap:12px">
+      <span class="number-badge badge-pop" aria-hidden="true">3</span>
+      <div class="reveal" style="display:grid;gap:12px;--d:150ms">
         <span style="font-family:var(--font-display);font-size:var(--text-display-3);line-height:1.15">Installation</span>
         <span style="font-size:var(--text-body-lg);color:var(--text-muted);max-width:var(--measure-body);line-height:1.62">Protected surfaces taped off, the site secured, the approved concept painted, cleanup handled, and the finished work documented for your channels.</span>
       </div>
@@ -67,21 +69,21 @@
   <section style="background:var(--surface-forest);color:var(--text-on-forest);padding:clamp(72px,10vw,160px) 0">
     <div class="container">
       <div class="eyebrow eyebrow--ivory"><span>Event Activation</span></div>
-      <h2 style="font-size:var(--text-display-2);line-height:1.15;margin:22px 0 0;max-width:18ch;color:var(--warm-ivory)">Four Stages, One Footprint.</h2>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--space-6);margin-top:var(--space-8)">
-        <div class="keyline-box">
+      <h2 data-words style="font-size:var(--text-display-2);line-height:1.15;margin:22px 0 0;max-width:18ch;color:var(--warm-ivory)">Four Stages, One Footprint.</h2>
+      <div data-stagger="130" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--space-6);margin-top:var(--space-8)">
+        <div class="keyline-box reveal">
           <span class="keyline-label">01 · Strategy</span>
           <div class="keyline-body">One-hour consult on direction, audience, and conversion goals. Footprint and event plot rendering for three visual directions.</div>
         </div>
-        <div class="keyline-box">
+        <div class="keyline-box reveal">
           <span class="keyline-label">02 · Planning</span>
           <div class="keyline-body">Marketing assets built around the approved concept: one reel, two stills, a landing page, lead capture, and terms. Vendor and sponsor outreach begins.</div>
         </div>
-        <div class="keyline-box">
+        <div class="keyline-box reveal">
           <span class="keyline-label">03 · Activation</span>
           <div class="keyline-body">Vendors coordinated, operations finalized, the event executed, and set-up and teardown handled on site.</div>
         </div>
-        <div class="keyline-box">
+        <div class="keyline-box reveal">
           <span class="keyline-label">04 · Measurement</span>
           <div class="keyline-body">An attendance and engagement review with traceable metrics on customer engagement.</div>
         </div>
@@ -90,7 +92,7 @@
   </section>
 
   <section class="container" style="padding-top:clamp(72px,10vw,150px);padding-bottom:clamp(72px,10vw,150px);display:flex;align-items:center;justify-content:space-between;gap:var(--space-7);flex-wrap:wrap">
-    <h2 style="font-size:var(--text-display-2);line-height:1.15;margin:0;max-width:18ch">Great Design Gives People a Reason to Stay.</h2>
+    <h2 data-words style="font-size:var(--text-display-2);line-height:1.15;margin:0;max-width:18ch">Great Design Gives People a Reason to Stay.</h2>
     <a class="btn btn--primary btn--lg" href="/book">Book a 30-Minute Consult <span class="arr" aria-hidden="true">→</span></a>
   </section>
 </main>

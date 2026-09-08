@@ -8,11 +8,13 @@
 <meta property="og:title" content="The Work — Designated">
 <meta property="og:description" content="Four projects, and what each one changed about how the room gets used.">
 <meta property="og:image" content="/assets/work/kbs-eagle.jpg">
+<script>try{if(!sessionStorage.dsgSeen&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("loading")}catch(e){}</script>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
 <link rel="stylesheet" href="/css/site.css">
+<script src="/js/site.js" defer></script>
 </head>
 <body>
 
@@ -35,14 +37,14 @@
       <span class="dots" aria-hidden="true"></span>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(32px,7vw,110px);align-items:end;margin-top:28px">
-      <h1 style="font-size:var(--text-display-1);margin:0;max-width:16ch">Every Detail Shapes How People <span class="accent">Feel.</span></h1>
-      <p class="lede-right">Four projects, and what each one changed about how the room gets used.</p>
+      <h1 data-words style="font-size:var(--text-display-1);margin:0;max-width:16ch">Every Detail Shapes How People <span class="accent">Feel.</span></h1>
+      <p class="lede-right reveal" style="--d:250ms">Four projects, and what each one changed about how the room gets used.</p>
     </div>
   </section>
 
   <section class="container" style="padding-bottom:clamp(72px,10vw,150px)">
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--space-5)">
-      <div class="card">
+    <div data-stagger="110" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--space-5)">
+      <div class="card reveal">
         <div class="card-media card-media--300"><div style="background-image:url(/assets/work/kbs-eagle.jpg)"></div></div>
         <div class="card-body">
           <span class="card-eyebrow">Hospitality</span>
@@ -50,7 +52,7 @@
           <span class="card-meta">Eagle, ID · Large-scale interior mural</span>
         </div>
       </div>
-      <div class="card">
+      <div class="card reveal">
         <div class="card-media card-media--300"><div style="background-image:url(/assets/work/kaneh-massage-details.jpg)"></div></div>
         <div class="card-body">
           <span class="card-eyebrow">Wellness</span>
@@ -58,7 +60,7 @@
           <span class="card-meta">Boise, ID · Environmental mural + QR touchpoints</span>
         </div>
       </div>
-      <div class="card">
+      <div class="card reveal">
         <div class="card-media card-media--300"><div style="background-image:url(/assets/work/kbs-warehouse.jpg)"></div></div>
         <div class="card-body">
           <span class="card-eyebrow">Hospitality</span>
@@ -66,7 +68,7 @@
           <span class="card-meta">Boise, ID · Transportable mural panels</span>
         </div>
       </div>
-      <div class="card">
+      <div class="card reveal">
         <div class="card-media card-media--300"><div style="background-image:url(/assets/work/south-pine-event.jpg)"></div></div>
         <div class="card-body">
           <span class="card-eyebrow">Event Activation</span>
@@ -77,7 +79,7 @@
     </div>
 
     <div style="display:grid;gap:clamp(64px,9vw,130px);margin-top:clamp(64px,9vw,130px)">
-      <div class="case-study">
+      <div class="case-study reveal">
         <div class="case-study-cols">
           <div class="case-study-images">
             <div style="background-image:url(/assets/work/kaneh-massage-wide.jpg)" role="img" aria-label="Environmental mural through the shared spaces at Kaneh Massage"></div>
@@ -101,7 +103,7 @@
         <h2 class="case-study-client">Kaneh Massage<span class="accent">.</span></h2>
       </div>
 
-      <div class="case-study case-study--left">
+      <div class="case-study case-study--left reveal">
         <div class="case-study-cols">
           <div class="case-study-images">
             <div style="background-image:url(/assets/work/south-pine-event.jpg)" role="img" aria-label="Botanical mural and community activation at South + Pine"></div>
@@ -129,7 +131,7 @@
   <section style="background:var(--surface-inverse);color:var(--text-on-dark);padding:clamp(56px,8vw,120px) 0">
     <div class="container" style="display:grid;gap:var(--space-6);justify-items:start">
       <div class="eyebrow eyebrow--ivory"><span>Let's Begin</span></div>
-      <h2 style="font-size:var(--text-display-2);line-height:1.15;margin:0;max-width:22ch;color:var(--text-on-dark)">People Remember Experiences Long After They Forget Information.</h2>
+      <h2 data-words style="font-size:var(--text-display-2);line-height:1.15;margin:0;max-width:22ch;color:var(--text-on-dark)">People Remember Experiences Long After They Forget Information.</h2>
       <a class="btn btn--inverse" href="/book">Book a 30-Minute Consult</a>
     </div>
   </section>
