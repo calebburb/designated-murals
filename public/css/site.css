@@ -486,9 +486,12 @@ html.js .reveal.in{opacity:1;transform:none}
 
 /* Word-rise headlines: each word rises and settles like set type,
    then the copper accent ignites once its line has landed. */
+/* The mask window bleeds .35em above and .2em below the em box
+   (cancelled by negative margins) so TAN Nimbus's overshooting
+   ascenders and descenders are never clipped once a word settles. */
 html.js [data-words] .w{display:inline-block;overflow:hidden;vertical-align:bottom;
-  padding:0 .04em .06em;margin:0 -.04em -.06em}
-html.js [data-words] .w>span{display:inline-block;transform:translateY(118%) rotate(5deg);
+  padding:.35em .08em .2em;margin:-.35em -.08em -.2em}
+html.js [data-words] .w>span{display:inline-block;transform:translateY(140%) rotate(5deg);
   transform-origin:0 100%;
   transition:transform .95s var(--ease-entrance);transition-delay:calc(var(--wi)*75ms)}
 html.js [data-words].in .w>span{transform:none}
