@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book the Consult — Designated</title>
+<meta name="description" content="Thirty minutes, no obligation. We talk through the space, the atmosphere you want, and whether a mural or an activation is the right move.">
+<meta property="og:title" content="Book the Consult — Designated">
+<meta property="og:description" content="Thirty minutes, no obligation. You leave with a clear next step either way.">
+<meta property="og:image" content="/assets/work/kbs-eagle.jpg">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+
+<div class="site-header-wrap">
+  <header class="site-header">
+    <a class="wordmark" href="/">Designated</a>
+    <nav class="site-nav" aria-label="Main">
+      <a class="nav-link" href="/work">Work</a>
+      <a class="nav-link" href="/process">Process</a>
+      <a class="nav-link" href="/studio">Studio</a>
+      <a class="btn btn--secondary btn--sm" href="/book">Book a Consult</a>
+    </nav>
+  </header>
+</div>
+
+<main style="position:relative">
+  <section class="container" style="padding-top:clamp(48px,7vw,104px);padding-bottom:clamp(56px,8vw,120px)">
+    <div class="eyebrow">
+      <span>Let's Begin</span>
+      <span class="dots" aria-hidden="true"></span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(40px,7vw,100px);margin-top:28px;align-items:start">
+      <div style="display:grid;gap:var(--space-6);justify-items:start">
+        <h1 style="font-size:var(--text-display-1);margin:0;max-width:13ch">Book the <span class="accent">Consult.</span></h1>
+        <p style="font-size:var(--text-body-lg);color:var(--text-muted);margin:0;max-width:36ch;line-height:1.62">Thirty minutes, no obligation. We talk through the space, the atmosphere you want, and whether a mural or an activation is the right move. You leave with a clear next step either way.</p>
+        <span class="dot-rule dot-rule--18" aria-hidden="true"></span>
+        <div style="display:grid;gap:8px;font-size:var(--text-body-md);color:var(--text-muted);line-height:1.6">
+          <span>208-519-0696</span>
+          <span>Boise, Idaho</span>
+          <span>Answered within two working days.</span>
+        </div>
+        <div style="display:grid;gap:12px;border-top:1px solid var(--line-hairline);padding-top:var(--space-5);width:100%">
+          <span style="font-size:var(--text-label-sm);letter-spacing:var(--track-label);text-transform:uppercase;color:var(--text-label);line-height:1.6">What the Call Covers</span>
+          <span style="font-size:var(--text-body-md);color:var(--text-muted);line-height:1.6">Atmosphere and subject direction · wall or footprint review · timeline and access · what a written scope will include.</span>
+        </div>
+      </div>
+
+      <form id="consult-form" style="display:grid;gap:var(--space-5);background:var(--surface-raised);border:1px solid var(--line-hairline);padding:clamp(24px,4vw,44px)">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:var(--space-5)">
+          <div class="field">
+            <label for="bn">Your Name <span class="req">*</span></label>
+            <input class="input" id="bn" name="name" placeholder="First and last" required>
+          </div>
+          <div class="field">
+            <label for="be">Email <span class="req">*</span></label>
+            <input class="input" id="be" name="email" type="email" placeholder="you@organization.com" required>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:var(--space-5)">
+          <div class="field">
+            <label for="bo">Organization</label>
+            <input class="input" id="bo" name="organization" placeholder="Business name">
+          </div>
+          <div class="field">
+            <label for="bp">Phone</label>
+            <input class="input" id="bp" name="phone" placeholder="Best number for the call">
+          </div>
+        </div>
+        <div class="field">
+          <label for="bt">Space Type</label>
+          <span class="select-wrap">
+            <select class="select" id="bt" name="space_type">
+              <option value="">Select one</option>
+              <option>Restaurant / Bar</option>
+              <option>Wellness Studio / Spa</option>
+              <option>Retail / Boutique</option>
+              <option>Venue / Event Space</option>
+              <option>Office / Property</option>
+              <option>Touring / Brand Activation</option>
+              <option>Other</option>
+            </select>
+          </span>
+        </div>
+        <fieldset class="field" style="border:0;padding:0;margin:0">
+          <legend class="field-label" style="padding:0;margin-bottom:8px">Preferred Time</legend>
+          <div style="display:flex;gap:var(--space-5);flex-wrap:wrap;padding-top:6px">
+            <label class="radio">
+              <input type="radio" name="slot" value="am" checked>
+              <span class="dot" aria-hidden="true"></span>
+              <span class="radio-label">Weekday mornings</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="slot" value="pm">
+              <span class="dot" aria-hidden="true"></span>
+              <span class="radio-label">Weekday afternoons</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="slot" value="on">
+              <span class="dot" aria-hidden="true"></span>
+              <span class="radio-label">On site, at the space</span>
+            </label>
+          </div>
+          <span class="field-help">We'll confirm by email.</span>
+        </fieldset>
+        <div class="field">
+          <label for="bs">The Space <span class="req">*</span></label>
+          <textarea class="textarea" id="bs" name="space" rows="4" placeholder="Rough wall dimensions, how the room is used, and what you'd like people to feel." required></textarea>
+        </div>
+        <div style="border-top:1px solid var(--line-soft);padding-top:var(--space-5);display:grid;gap:var(--space-4)">
+          <label class="switch">
+            <input type="checkbox" name="wants_event">
+            <span class="track" aria-hidden="true"></span>
+            <span>Interested in an event activation as well</span>
+          </label>
+        </div>
+        <div style="display:flex;gap:var(--space-3);align-items:center;flex-wrap:wrap">
+          <button class="btn btn--primary btn--lg" type="submit">Request the Consult <span class="arr" aria-hidden="true">→</span></button>
+          <span style="font-size:var(--text-caption);color:var(--text-muted);line-height:1.6">No obligation. No sales calls.</span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <div class="toast-wrap" id="toast" hidden>
+    <div class="toast" role="status">
+      <span class="toast-dot" aria-hidden="true"></span>
+      <span class="toast-msg">Request received. We'll confirm a time within two working days.</span>
+      <button class="toast-close" type="button" aria-label="Dismiss" onclick="document.getElementById('toast').hidden = true">×</button>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-col--brand">
+        <span class="wordmark wordmark--lg wordmark--ivory">Designated</span>
+        <p class="footer-blurb">Mural and event design for organizations that want people to stay. Boise, Idaho.</p>
+        <span class="dot-rule dot-rule--14" aria-hidden="true"></span>
+      </div>
+      <div class="footer-col">
+        <span class="footer-label">Pages</span>
+        <a class="footer-link" href="/work">Work</a>
+        <a class="footer-link" href="/process">Process</a>
+        <a class="footer-link" href="/studio">Studio</a>
+        <a class="footer-link" href="/book">Book a Consult</a>
+      </div>
+      <div class="footer-col">
+        <span class="footer-label">Studio</span>
+        <span class="footer-line">Boise, Idaho</span>
+        <span class="footer-line">208-519-0696</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copyright">© 2026 Designated. All rights reserved.</span>
+      <span class="footer-tagline">The Architecture of Momentum</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Consult form submission.
+// FORM_ENDPOINT is empty by default: the form shows the confirmation toast but
+// the lead goes nowhere. To actually receive requests, create a free form at
+// https://formspree.io (or similar), and paste its endpoint URL here, e.g.
+//   const FORM_ENDPOINT = 'https://formspree.io/f/xxxxxxxx';
+const FORM_ENDPOINT = '';
+
+document.getElementById('consult-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const form = e.target;
+  if (FORM_ENDPOINT) {
+    try {
+      await fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form),
+      });
+    } catch (err) { /* still confirm; the phone number is on the page */ }
+  }
+  form.reset();
+  document.getElementById('toast').hidden = false;
+});
+</script>
+
+</body>
+</html>
