@@ -1,6 +1,3 @@
-# TAN Nimbus is a licensed retail font (TAN Type Foundry) — do not commit it
-# to a public repository. See README.md for how to include it in deploys.
-public/fonts/TAN-NIMBUS.otf
 
 # OS files
 .DS_Store

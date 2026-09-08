@@ -39,14 +39,11 @@ or `python3 -m http.server -d public 8000` (then use `/work.html`-style URLs).
 
 Or from the command line: `npm i -g vercel && vercel --prod` from the repo root.
 
-### The display font (important)
+### The display font
 
-The brand's display face, **TAN Nimbus**, is a licensed retail font from TAN Type Foundry. Its license does not allow committing it to a public repository, so `public/fonts/TAN-NIMBUS.otf` is gitignored. Without it the site falls back to Georgia — legible, but not the brand.
+The design's original display face was **TAN Nimbus**, a licensed retail font. The site instead uses **[Shrikhand](https://fonts.google.com/specimen/Shrikhand)** (SIL Open Font License, served from Google Fonts) — the closest free match to its fat, groovy character. It's set via `--font-display` in `public/css/site.css` and loaded in each page's Google Fonts `<link>`.
 
-To ship the real font, either:
-
-- **Make this repo private** (GitHub → Settings → General → Danger Zone → Change visibility), then remove the `public/fonts/TAN-NIMBUS.otf` line from `.gitignore`, commit the font file, and push. Vercel deploys private repos fine. **Also confirm the license covers web embedding before going live.**
-- Or keep the repo public and deploy from a machine that has the font: place the `.otf` at `public/fonts/TAN-NIMBUS.otf` locally and run `vercel --prod` — the CLI uploads the working directory, ignoring `.gitignore`d files only if listed in `.vercelignore` (which it is not).
+If a TAN Nimbus license is ever acquired, restore it by placing the `.otf` at `public/fonts/TAN-NIMBUS.otf`, adding an `@font-face` for it in `site.css`, and putting `'TAN Nimbus'` first in `--font-display`. To try **Fraunces** instead (the calmer upright alternative), swap `Shrikhand` for `Fraunces:opsz,wght@144,900` in the font `<link>`s and `'Fraunces'` in `--font-display`.
 
 ## The consult form
 
